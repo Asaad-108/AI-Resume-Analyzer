@@ -120,7 +120,7 @@ MongoDB (Database)
 
 🔧 Installation & Setup
 1️⃣ Clone Repo
-git clone https://github.com/your-username/ai-resume-analyzer.git
+git clone https://github.com/Asaad-108/ai-resume-analyzer.git
 cd ai-resume-analyzer
 
 2️⃣ Install Frontend
