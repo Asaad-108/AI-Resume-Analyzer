@@ -9,12 +9,23 @@ h2{
     padding: 7px;
     text-align: center;
 }
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
 .container{
     background: #fcfeff;
-    margin: 30px 150px;
+    /* margin: 30px 150px; */
     border: 2px solid #fcfeff;
     border-radius: 3%;
     box-shadow: #fcfeff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 .container h4{
     /* background: red; */
@@ -30,9 +41,8 @@ h2{
     margin: 0;
 }
 .upload{
-    /* display: flex; */
     background: #f7fafc;
-    margin: 20px 100px;
+    /* margin: 20px 100px; */
     padding: 10px;
     border: 2px dashed rgb(205, 202, 202);
     border-radius: 2%;
@@ -40,27 +50,26 @@ h2{
 }
 .uploaddone{
     background: #f0fcf4;
-    margin: 20px 100px;
+    /* margin: 20px 100px; */
     padding: 10px;
-    border: 2px dashed #c6f9d6;
+    border: 2px dashed #a9f2c0;
     border-radius: 2%;
     cursor: pointer;
 }
 .imagediv{
     display: flex;
     justify-content: center;
-
 }
 .icondone
 {
-    height: 50px;
+    height: 40px;
     background-color: #aaf3c2;
     border: 2px solid #aaf3c2;
     border-radius: 40%;
     padding: 7px;
 }
 .icon{
-    height: 50px;
+    height: 40px;
     background-color: #e9e8ff;
     border: 2px solid #e9e8ff;
     border-radius: 40%;
@@ -95,13 +104,18 @@ h2{
     background-color: #8347fc;
     color: #ffffff;
 }
+.mainbotton{
+    display: flex;
+    justify-content: center;
+}
 .bottom{
     display: flex;
     flex-direction: row;
     /* background-color: blue; */
     justify-content: space-between;
     padding: 5px 20px;
-    margin: 0px 150px;
+    gap: 10px;
+    /* margin: 0px 150px; */
 
 }
 .box{
@@ -125,4 +139,7 @@ h2{
 }
 .p2{
     color: gray;
+}
+.file{
+    display: none;
 }
