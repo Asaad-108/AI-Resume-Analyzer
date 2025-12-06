@@ -1,7 +1,20 @@
 import './App.css'
+import { Navigate, useNavigate } from 'react-router-dom'
+import { useState } from 'react';
 
 function App() {
+  const navigate = useNavigate();
+  const gotoResult=()=>{
+    navigate("/result");
+  }
+  const [file, setFile] = useState(null);
+  const [active,setActive] = useState(false);
 
+  const handleFileChange = (e) => {
+    setFile(e.target.files[0]);
+    setActive(!active);
+
+  };
   return (
     <>
     <h2>AI RESUME ANALYZER</h2>
@@ -10,20 +23,40 @@ function App() {
       <h4>Upload your resume</h4>
       <p>Get instant feedback on your resume with AI-powered analysis</p>
       <form action="" method="post">
-        <input type="file" className='file' id='file'/>
+        <input type="file" className='file' id='file' onChange={handleFileChange}/>
         <label htmlFor="file">
-          <div className="uploaddone">
+          <div className={active ? "uploaddone" : 'upload'}>
         <div className='imagediv'>
-          <img src="src/assets/upload.svg" alt="uploadicon" className='icondone' />
+          {file ? 
+          (<>
+            <img src="src/assets/circle-check-big.svg" alt="uploadicon" className='icondone'/>
+          </>
+          )
+          :(
+            <>
+                <img src="src/assets/cloud-upload.svg" alt="uploadicon" className='icon' />
+            </>
+          )
+          }
         </div>
-        <p className='text'>Click to upload your resume</p>
-        <p className='text'>or drag and drop</p>
-        <p className='text'>PDF or DOCX (MAX 5MB)</p>
+        {file ? (
+          <>
+          <p className='text textdone'>File Selected: {file.name}</p>
+            <p className='text text2'>File ready for analysis</p>
+            <p className='text text2'>PDF or DOCX (MAX 5MB)</p>
+          </>
+      ) : (
+        <>
+          <p className='text'>Click to upload your resume</p>
+                <p className='text text2'>or drag and drop</p>
+                <p className='text text2'>PDF or DOCX (MAX 5MB)</p>
+        </>
+      )}
       </div>
         </label>
       </form>
       <div className='btndiv'>
-        <button className='btndone'>Analyze Resume</button>
+        <button className={active ? 'btndone' : 'btn' } onClick={gotoResult}>Analyze Resume</button>
       </div>
     </div>
     </div>

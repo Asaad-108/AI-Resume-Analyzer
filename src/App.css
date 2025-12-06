@@ -52,7 +52,7 @@ h2{
     background: #f0fcf4;
     /* margin: 20px 100px; */
     padding: 10px;
-    border: 2px dashed #a9f2c0;
+    border: 2px dashed #00a63d;
     border-radius: 2%;
     cursor: pointer;
 }
@@ -65,14 +65,14 @@ h2{
     height: 40px;
     background-color: #aaf3c2;
     border: 2px solid #aaf3c2;
-    border-radius: 40%;
+    border-radius: 50%;
     padding: 7px;
 }
 .icon{
     height: 40px;
-    background-color: #e9e8ff;
-    border: 2px solid #e9e8ff;
-    border-radius: 40%;
+    background-color: #e3e8ff;
+    border: 2px solid #e3e8ff;
+    border-radius: 50%;
     padding: 7px;
 }
 .text{
@@ -92,6 +92,7 @@ h2{
     height: 30px;
     border: none;
     border-radius: 4%;
+    cursor: pointer;
     margin: 10px;
     color: #9b9a9c;
 }
@@ -101,6 +102,7 @@ h2{
     border: none;
     border-radius: 5%;
     margin: 10px;
+    cursor: pointer;
     background-color: #8347fc;
     color: #ffffff;
 }
@@ -142,4 +144,10 @@ h2{
 }
 .file{
     display: none;
+}
+.textdone{
+    color: #00a63d;
+}
+.text2{
+    color: grey;
 }
