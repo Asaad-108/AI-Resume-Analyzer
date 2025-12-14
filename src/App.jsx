@@ -17,7 +17,10 @@ function App() {
   };
   return (
     <>
-    <h2>AI RESUME ANALYZER</h2>
+    <div className="nav">
+      <img src="src/assets/file-text.svg" alt="" className='logo' />
+      <h3>AI RESUME ANALYZER</h3>
+    </div>
     <div className="maincontainer">
       <div className='container'>
       <h4>Upload your resume</h4>
