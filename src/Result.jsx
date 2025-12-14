@@ -7,15 +7,27 @@ function Result() {
     }
     return(
         <>
-            <div className="nav">
+            <div className="rnav">
                 <img src="src/assets/arrow-left.svg" alt=""  onClick={gotoMain}/>
                 <img src="src/assets/file-text.svg" alt="" className='logo' onClick={gotoMain}/>
                 <h3>AI RESUME ANALYZER</h3>
             </div>
             <div className="mainbox">
-                <div className="box box1">ATS</div>
-                <div className="box box2">skill match</div>
-                <div className="box box3">resume Strength</div>
+                <div className="rbox rbox1">ATS</div>
+                <div className="rbox rbox2">skill match</div>
+                <div className="rbox rbox3">resume Strength</div>
+            </div>
+            <div className="rmaincontainer">
+                <div className="rcontainer">
+                    <div className="cont container1">skills found</div>
+                    <div className="cont container1">skills to add</div>
+                    <div className="cont container1">skills distribution</div>
+                </div>
+                <div className="rcontainer">
+                    <div className="cont container2">recommendation job role</div>
+                    <div className="cont container2">suggested improvement</div>
+                    <div className="cont container2">resume compostion</div>
+                </div>
             </div>
         </>
     )

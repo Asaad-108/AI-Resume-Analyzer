@@ -59,7 +59,7 @@ function App() {
         </label>
       </form>
       <div className='btndiv'>
-        <button className={active ? 'btndone' : 'btn' } onClick={gotoResult}>Analyze Resume</button>
+        <button className={active ? 'btndone' : 'btn' } onClick={active ? gotoResult : ''}>Analyze Resume</button>
       </div>
     </div>
     </div>
